@@ -61,7 +61,7 @@ def range_age(d):
         d_affected[i] = get_age_affected(d, i)
         i += 5
     for key in d_total.keys():
-        print("Idade - [" + str(key) + "," + str(key + 5) + "]: " + str(d_total[key]) + " individuos entre eles " + str(
+        print("Idade - [" + str(key) + "," + str(key + 4) + "]: " + str(d_total[key]) + " individuos entre eles " + str(
             d_affected[key]) + " afetados")
 
 
@@ -97,12 +97,11 @@ def range_col(d):
     i = mini
     while i in range(mini, maxi):
         col = get_col(d, i)
-        print(col)
         d_total[i] = col[0]
         d_affected[i] = col[1]
         i += 10
     for key in d_total.keys():
-        print("Colestrol - [" + str(key) + "," + str(key + 10) + "]: " + str(d_total[key]) + " individuos, entre eles " +
+        print("Colestrol - [" + str(key) + "," + str(key + 9) + "]: " + str(d_total[key]) + " individuos, entre eles " +
               str(d_affected[key]) + " afetados")
 
 
